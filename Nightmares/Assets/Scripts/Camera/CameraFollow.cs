@@ -20,3 +20,5 @@ public class CameraFollow : MonoBehaviour {
 		transform.position = Vector3.Lerp (transform.position, targetCamPos, smoothing * Time.deltaTime);
 	}
 }
+///////if changing the layout of the level then need to rebake level to help the AI
+/// do this in the navigation tab
