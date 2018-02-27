@@ -15,8 +15,14 @@ namespace CompleteProject
         {
             // Set up the references.
             player = GameObject.FindGameObjectWithTag ("Player").transform;
-            playerHealth = player.GetComponent <PlayerHealth> ();
+			if (player == null)
+				print ("Didn't find player!");
+			playerHealth = player.GetComponent <PlayerHealth> ();
+			if (playerHealth == null)
+				print ("Didn't find health");
             enemyHealth = GetComponent <EnemyHealth> ();
+			if (enemyHealth == null)
+				print ("Didn't find my health");
             nav = GetComponent <UnityEngine.AI.NavMeshAgent> ();
         }
 
