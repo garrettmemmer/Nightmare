@@ -13,11 +13,14 @@ public class FlighLightOnOff : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//nav = EnemyManager.FindObjectOfType<UnityEngine.AI.NavMeshAgent> ();
 		if (Input.GetMouseButtonDown (1)) {
 			light.enabled = !light.enabled;
 			print ("left click pressed");
 			//make the mosters stop moving//////
 			//enemy.nagivgation.off   ?????
+
+		//	nav.enabled = false;
 		}
 	}
 }
