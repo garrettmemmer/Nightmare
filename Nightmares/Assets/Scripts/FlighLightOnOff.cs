@@ -15,6 +15,7 @@ public class FlighLightOnOff : MonoBehaviour {
 	void Update () {
 		if (Input.GetMouseButtonDown (1)) {
 			light.enabled = !light.enabled;
+			print ("left click pressed");
 			//make the mosters stop moving//////
 			//enemy.nagivgation.off   ?????
 		}

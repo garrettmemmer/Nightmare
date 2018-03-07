@@ -72,7 +72,6 @@
      <Compile Include="Assets\_Complete-Game\Scripts\Player\PlayerHealth.cs" />
      <Compile Include="Assets\_Complete-Game\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\_Complete-Game\Scripts\Player\PlayerShooting.cs" />
-     <Compile Include="Assets\FlighLightOnOff.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -121,12 +120,15 @@
      <Compile Include="Assets\Scripts\Enemy\EnemyAttack.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyMovement.cs" />
+     <Compile Include="Assets\Scripts\FlighLightOnOff.cs" />
      <Compile Include="Assets\Scripts\Managers\EnemyManager.cs" />
      <Compile Include="Assets\Scripts\Managers\GameOverManager.cs" />
      <Compile Include="Assets\Scripts\Managers\ScoreManager.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerShooting.cs" />
+     <Compile Include="Assets\Scripts\Win.cs" />
+     <Compile Include="Assets\Scripts\WinngZone.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
