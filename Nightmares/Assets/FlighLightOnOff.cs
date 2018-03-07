@@ -8,14 +8,15 @@ public class FlighLightOnOff : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		print ("space pressed"); //not working
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetMouseButtonDown (1)) {
 			light.enabled = !light.enabled;
-			print ("space pressed");
+			//make the mosters stop moving//////
+			//enemy.nagivgation.off   ?????
 		}
 	}
 }
