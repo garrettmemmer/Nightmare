@@ -27,7 +27,7 @@ public class WinngZone : MonoBehaviour {
 		if (other.gameObject == player) {
 			playerInWin = true;
 			//play win screen
-			print("you win");
+			print("YOU WIN");
 		}
 	}
 }

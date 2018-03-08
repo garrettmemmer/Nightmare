@@ -5,22 +5,23 @@ using UnityEngine;
 public class FlighLightOnOff : MonoBehaviour {
 
 	public Light light;
-
+	UnityEngine.AI.NavMeshAgent nav;
 	// Use this for initialization
 	void Start () {
-		print ("space pressed"); //not working
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		//nav = EnemyManager.FindObjectOfType<UnityEngine.AI.NavMeshAgent> ();
+		//nav = GameObject ("NavMeshAgent");
+		//nav = GetComponent<UnityEngine.AI.NavMeshAgent> ();
 		if (Input.GetMouseButtonDown (1)) {
 			light.enabled = !light.enabled;
 			print ("left click pressed");
 			//make the mosters stop moving//////
 			//enemy.nagivgation.off   ?????
 
-		//	nav.enabled = false;
+			//nav.enabled = false;
 		}
 	}
 }
