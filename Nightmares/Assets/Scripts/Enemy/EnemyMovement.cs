@@ -7,6 +7,8 @@ public class EnemyMovement : MonoBehaviour
     PlayerHealth playerHealth;
     EnemyHealth enemyHealth;
     UnityEngine.AI.NavMeshAgent nav;
+	public float speed = 3f;
+
 
 
     void Awake ()

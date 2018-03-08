@@ -6,6 +6,8 @@ public class FlighLightOnOff : MonoBehaviour {
 
 	public Light light;
 	UnityEngine.AI.NavMeshAgent nav;
+	GameObject[] allEnemies;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -15,13 +17,25 @@ public class FlighLightOnOff : MonoBehaviour {
 	void Update () {
 		//nav = GameObject ("NavMeshAgent");
 		//nav = GetComponent<UnityEngine.AI.NavMeshAgent> ();
-		if (Input.GetMouseButtonDown (1)) {
+		if (Input.GetKeyDown ("space")) {
+			
 			light.enabled = !light.enabled;
-			print ("left click pressed");
+			print ("space pressed");
 			//make the mosters stop moving//////
-			//enemy.nagivgation.off   ?????
-
+			GameObject[] allEnemies = GameObject.FindGameObjectsWithTag ("Enemy");
+			foreach (GameObject enemy in allEnemies)
+				enemy.GetComponent<UnityEngine.AI.NavMeshAgent> ().speed = 0f;
 			//nav.enabled = false;
+
+			Invoke ("TurnBackOnSpeed", 2f); 
 		}
 	}
+
+	void TurnBackOnSpeed()
+	{
+		GameObject[] allEnemies = GameObject.FindGameObjectsWithTag ("Enemy");
+		foreach (GameObject enemy in allEnemies)
+			enemy.GetComponent<UnityEngine.AI.NavMeshAgent> ().speed = enemy.GetComponent<EnemyMovement> ().speed;
+		light.enabled = !light.enabled;
+		}
 }
