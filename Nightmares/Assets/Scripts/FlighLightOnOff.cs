@@ -22,12 +22,13 @@ public class FlighLightOnOff : MonoBehaviour {
 			light.enabled = !light.enabled;
 			print ("space pressed");
 			//make the mosters stop moving//////
+			//if(enemy in collider){  
 			GameObject[] allEnemies = GameObject.FindGameObjectsWithTag ("Enemy");
 			foreach (GameObject enemy in allEnemies)
 				enemy.GetComponent<UnityEngine.AI.NavMeshAgent> ().speed = 0f;
 			//nav.enabled = false;
 
-			Invoke ("TurnBackOnSpeed", 2f); 
+			Invoke ("TurnBackOnSpeed", 2f); //possibly need to move this after adding collider
 		}
 	}
 

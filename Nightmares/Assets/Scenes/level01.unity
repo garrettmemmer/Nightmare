@@ -4404,6 +4404,7 @@ GameObject:
   - component: {fileID: 371565306}
   - component: {fileID: 371565307}
   - component: {fileID: 371565308}
+  - component: {fileID: 371565309}
   m_Layer: 0
   m_Name: Flashlight
   m_TagString: Untagged
@@ -4418,8 +4419,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 371565305}
   m_LocalRotation: {x: 0.19493711, y: -0.017606622, z: -0.0034998937, w: 0.9806515}
-  m_LocalPosition: {x: -2.2409376e-16, y: 0.000000029802303, z: -2.8679312e-15}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.27, y: -2.9, z: 7.02}
+  m_LocalScale: {x: 12.647876, y: 0.52447134, z: 5.4165277}
   m_Children: []
   m_Father: {fileID: 1853103933}
   m_RootOrder: 0
@@ -4486,6 +4487,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 371565307}
+--- !u!136 &371565309
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 371565305}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &385041230
 Prefab:
   m_ObjectHideFlags: 0
