@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18319218, g: 0.2267955, b: 0.29456192, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -98,7 +98,7 @@ NavMeshSettings:
     agentRadius: 0.75
     agentHeight: 1.2
     agentSlope: 45
-    agentClimb: 0.34
+    agentClimb: 0.3
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1031333911}
   enemy: {fileID: 1340979849809234, guid: 424b47d50fb7b5344895f71e456dd59b, type: 2}
-  spawnTime: 3
+  spawnTime: 5
   spawnPoints:
   - {fileID: 857741652}
 --- !u!114 &22751158
@@ -512,7 +512,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &115145513
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -571,7 +571,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 115145512}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.78, y: 1.35, z: 4.85}
+  m_LocalPosition: {x: 1.77, y: 1.22, z: 4.85}
   m_LocalScale: {x: 3.072898, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1432499394}
@@ -4605,7 +4605,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1205128811762080, guid: 970ef2fc30d064e4494188e5afe0995d, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 970ef2fc30d064e4494188e5afe0995d, type: 2}
@@ -5700,7 +5700,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1205128811762080, guid: 970ef2fc30d064e4494188e5afe0995d, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 970ef2fc30d064e4494188e5afe0995d, type: 2}
@@ -8075,7 +8075,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 175746, guid: ad67cddd729fb4342be2063a3f5ad7cc, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad67cddd729fb4342be2063a3f5ad7cc, type: 2}
