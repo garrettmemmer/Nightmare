@@ -25,7 +25,7 @@ public class WinngZone : MonoBehaviour {
 			playerInWin = true;
 
 			
-			print("YOU WIN");
+			//print("YOU WIN");
 		}
 	}
 

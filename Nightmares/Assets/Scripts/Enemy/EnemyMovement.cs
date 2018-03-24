@@ -9,7 +9,8 @@ public class EnemyMovement : MonoBehaviour
     UnityEngine.AI.NavMeshAgent nav;
 	public float speed = 3f;
 
-
+	public WinngZone inZone;
+	//public bool playerInWin;
 
     void Awake ()
     {
@@ -30,5 +31,8 @@ public class EnemyMovement : MonoBehaviour
         {
             nav.enabled = false;
         }
+		//if (inZone.playerInWin == true) {
+		//	nav.enabled = false;
+		//}
     }
 }
