@@ -17,10 +17,10 @@ public class FlighLightOnOff : MonoBehaviour {
 	void Update () {
 		//nav = GameObject ("NavMeshAgent");
 		//nav = GetComponent<UnityEngine.AI.NavMeshAgent> ();
-		if (Input.GetKeyDown ("space")) {
+		if (Input.GetMouseButtonDown (1)) {
 			
 			light.enabled = !light.enabled;
-			print ("space pressed");
+			print ("right click pressed");
 			//make the mosters stop moving//////
 			//if(enemy in collider){  
 			GameObject[] allEnemies = GameObject.FindGameObjectsWithTag ("Enemy");
