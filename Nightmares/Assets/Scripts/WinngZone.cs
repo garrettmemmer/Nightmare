@@ -14,6 +14,7 @@ public class WinngZone : MonoBehaviour {
 	{
 
 		player = GameObject.FindGameObjectWithTag ("Player");
+		anim = GetComponent<Animator>();
 	}
 
 
@@ -25,6 +26,14 @@ public class WinngZone : MonoBehaviour {
 
 			
 			print("YOU WIN");
+		}
+	}
+
+	void Update () {
+		if (playerInWin == true) {
+			anim.SetTrigger ("YouWin");
+			//play win screen
+				//		print("playerInWin == true");
 		}
 	}
 }
