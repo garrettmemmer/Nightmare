@@ -10,7 +10,7 @@ public class EnemyMovement : MonoBehaviour
 	public float speed = 3f;
 
 	public WinngZone inZone;
-	//public bool playerInWin;
+	public bool playerInWin;
 
     void Awake ()
     {

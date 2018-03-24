@@ -29,8 +29,6 @@ public class GameOverManager : MonoBehaviour
 		//if (playerInWin == true) {
 			anim.SetTrigger ("Winner");
 					print("G-O playerInWin == true");
-
-
 		}
 
         if (playerHealth.currentHealth <= 0)
@@ -38,11 +36,6 @@ public class GameOverManager : MonoBehaviour
             anim.SetTrigger("GameOver");
 
 			restartTimer += Time.deltaTime;
-
-			//if (restartTimer >= restartDelay) 
-			//{
-			//	Application.LoadLevel (Application.loadedLevel);
-			//}
         }
 
     }
