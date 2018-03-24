@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WinngZone : MonoBehaviour {
 
-	bool playerInWin = false;
+	public bool playerInWin = false;
 	GameObject player;
 	Animator anim;
 
@@ -31,9 +31,9 @@ public class WinngZone : MonoBehaviour {
 
 	void Update () {
 		if (playerInWin == true) {
-			anim.SetTrigger ("YouWin");
+			anim.SetTrigger ("Winner");
 			//play win screen
-				//		print("playerInWin == true");
+					//	print("playerInWin == true");
 		}
 	}
 }

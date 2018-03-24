@@ -3,11 +3,15 @@
 public class GameOverManager : MonoBehaviour
 {
     public PlayerHealth playerHealth;
-	bool playerInWin = false;
+	public bool playerInWinZone = false;
 	GameObject player;
 
     Animator anim;
 	float restartTimer;
+
+	void Start(){
+		GetComponentInChildren <WinngZone> ();
+	}
 
     void Awake()
     {
@@ -18,9 +22,9 @@ public class GameOverManager : MonoBehaviour
 
     void Update()
     {
-		if (playerInWin == true) {
-			//anim.SetTrigger ("YouWin");
-					print("playerInWin == true");
+		if (playerInWinZone == true) {
+			anim.SetTrigger ("Winner");
+					print("G-O playerInWin == true");
 		}
 
         if (playerHealth.currentHealth <= 0)
@@ -41,10 +45,11 @@ public class GameOverManager : MonoBehaviour
 	void OnTriggerEnter (Collider other)
 	{
 		if (other.gameObject == player) {
-			playerInWin = true;
+			playerInWinZone = true;
 			anim.SetTrigger ("Winner");
+			//anim.SetBool ("Win") = true;
 
-			print("YOU WIN");
+			print("G-O player in win");
 		}
 	}
 }

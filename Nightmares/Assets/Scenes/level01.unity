@@ -728,7 +728,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -9392763
+  randomSeed: 1523022978
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -5364,18 +5364,19 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 702989630}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd7a9a4d88d96094ab70ea2cf3472659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInWin: 0
 --- !u!114 &702989634
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 702989630}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360dc13528533604099ef3128c429bf4, type: 3}
   m_Name: 
@@ -5408,6 +5409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd7a9a4d88d96094ab70ea2cf3472659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInWin: 0
 --- !u!1001 &761544285
 Prefab:
   m_ObjectHideFlags: 0
@@ -7679,6 +7681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1031333911}
+  playerInWinZone: 0
 --- !u!95 &1579062437
 Animator:
   serializedVersion: 3
@@ -7707,6 +7710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd7a9a4d88d96094ab70ea2cf3472659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInWin: 0
 --- !u!1 &1604349449
 GameObject:
   m_ObjectHideFlags: 0
@@ -8476,6 +8480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd7a9a4d88d96094ab70ea2cf3472659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInWin: 0
 --- !u!95 &1760539939
 Animator:
   serializedVersion: 3
