@@ -24,6 +24,7 @@ public class FlighLightOnOff : MonoBehaviour {
 			//make the mosters stop moving//////
 			//if(enemy in collider){  
 			GameObject[] allEnemies = GameObject.FindGameObjectsWithTag ("Enemy");
+
 			foreach (GameObject enemy in allEnemies)
 				enemy.GetComponent<UnityEngine.AI.NavMeshAgent> ().speed = 0f;
 			//nav.enabled = false;
